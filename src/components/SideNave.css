@@ -1,0 +1,69 @@
+.nav-side {
+    display: flex;
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    justify-content: space-between;
+    left: 0;
+    transition: left 1s ease;
+    -webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -ms-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    z-index: 1000;
+}
+.right {
+    width: 75px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .logo {
+    width: 50px;
+    height: 50px;
+}
+.right .icons {
+    display: flex;
+    flex-direction: column;
+}
+.left {
+    background: black;
+    color: white;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+.links ul {
+    list-style: none;
+    padding: 10px 5px;
+    position: absolute;
+    bottom: 0;
+    transition: bottom 1s ease;
+    -webkit-transition: bottom 1s ease;
+    -moz-transition: bottom 1s ease;
+    -ms-transition: bottom 1s ease;
+    -o-transition: bottom 1s ease;
+}
+.links ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+.links ul a {
+    text-decoration: none;
+    color: white;
+}
+.nav-side.close {
+    left: -275px;
+}
+.left .links .close {
+    bottom: -250px;
+}
